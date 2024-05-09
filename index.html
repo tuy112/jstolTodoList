@@ -17,6 +17,7 @@
         </header>
 
         <main id="container" class="main">
+            <!-- 1.tableWrap -->
             <div class="tableWrap">
                 <h2>TodoList</h2>
                 <table class="todoTable">
@@ -56,13 +57,50 @@
 
             <hr/>
 
+            <!-- 2.studyWrap -->
             <div class="studyWrap">
-                <h2>ERP 신규구축을 위한 공부방</h2>
-                <button class="btn pressBtn" onclick="pressBtn()">공부하러가기</button>
+                <h2>ERP 신규구축을 위한 방</h2>
+                <button class="btn pressBtn" onclick="pressBtn()">페이지 이동</button>
+            </div>
+            
+            <div class="modal">
+                <div class="modalTxt">
+                    <p>지금 바로 이동합니다~ 잠시만 기다려주세요^^</p>
+                    <p>ERP의 세계로 GO GO..!!</p>
+                </div>
+                <div class="loading" id="load">
+                    <img src="./images/Walk.gif" alt="loading">
+                </div>
+            </div>
+
+            <!-- 3.erpWrap -->
+            <div class="erpWrap">
+                <div class="erpTxt">
+                    <h2>ERP에 대한 기본적인 지식</h2>
+                    <h3>1. ERP의 정의</h3>
+                    <p>
+                        전사적 자원관리시스템(Enterprise Resource Planning)은 회계, 인사, 구매, 판매, 수송, 배송, 물류 등 기업 운영에 필요한 핵심정보를 처리하는 응용소프트웨어들이 유연하게 통합된 결집체이다.
+                    </p>
+                    <br/>
+                    <h3>2. ERP란?</h3>
+                    <p>ERP 시스템은 기업의 효과적인 자원관리에 도움을 주고 기업운영의 의사결정에 통찰력을 제공해주는 프로그램</p>
+                    <p>인사 재무 생산 물류 등 기업의 전 부분에 걸쳐 독립적으로 운영되던 각종 관리시스템의 경영자원을 하나의 통합 시스템으로 재구축함으로서 생산성을 극대화하려는 경영혁신기법</p>
+                    <br/>
+                    <h3>3. ERP 도입배경</h3>
+                    <p>
+                        [1]
+                        임직원의 정보관리 능력극대화 / 업무수행능력 향상<br/>
+                        [2]
+                        의사결정 지원능력 향상 / 정보 공유를 통한 원활한 의사소통
+                    </p>
+                </div>
             </div>
         </main>
 
         <footer id="footer"></footer>
     </div>
+
+    <!-- script part -->
+    <script src="./js/main.js"></script>
 </body>
 </html>

@@ -87,3 +87,54 @@
   background: #333;
   color: #fff;
 }
+
+/* main - erpWrap */
+.erpWrap {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: #f5f5dc;
+  height: 90vh;
+}
+.erpTxt {
+  padding: 20px;
+}
+.erpTxt h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+.erpTxt h3 {
+  font-size: 17px;
+}
+.erpTxt p {
+  font-size: 14px;
+  line-height: 2.1;
+  margin-top: 20px;
+}
+
+/* main - modal */
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(0,0,0,0.5);
+}
+.modal .modalTxt {
+  position: relative;
+  top: 50%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.9;
+}
+.modal .loading {
+  position: relative;
+  top: 52%;
+  background: none;
+}
