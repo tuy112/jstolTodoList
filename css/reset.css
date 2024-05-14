@@ -31,7 +31,8 @@ body {
 a, button, .btn {   
     text-decoration: none;
 	cursor: pointer;
-    background: none;
+	color: #111;
+	background: none;
 }
 
 ol, ul , li {
