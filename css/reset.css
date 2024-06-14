@@ -115,9 +115,11 @@ hr {
 
 /* footer */
 #footer {
-	text-align: right;
-	margin-right: 10px;
-	margin-bottom: 5px;
+	position: fixed;
+    bottom: 0;
+    right: 0;
+	margin-right: 15px;
+    margin-bottom: 5px;
 }
 #footer p {
 	font-size: 13px;
