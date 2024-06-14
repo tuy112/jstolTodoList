@@ -12,8 +12,57 @@ function pressBtn() {
     });
 }
 
-// 2. ERP 공부방
+// card 돌아가는 기능
+class RotateCards {
+    constructor(cards, cardSequnce) {
+      this.cards = cards;
+      this.cardSequnce = cardSequnce;
+    }
+  
+    shuffle() {
+      this.cards.forEach((item, index) => {
+        const card = item;
+        card.id = this.cardSequnce[index];
+      });
+    }
+  
+    moveLeft() {
+      const value = this.cardSequnce.pop();
+      this.cardSequnce.unshift(value);
+  
+      this.shuffle();
+    }
+  
+    moveRight() {
+      const value = this.cardSequnce.shift();
+      this.cardSequnce.push(value);
+      this.shuffle();
+    }
+}
 
+// 2. card 공통기능
+function card() {
+    const cards = document.querySelectorAll('.card');
+    const cardSequnce = [
+        'firstCard',
+        'secondCard',
+        'thirdCard',
+        'fourthCard',
+        'fifthCard',
+        'sixthCard',
+    ];
+    const leftButton = document.querySelector('#cardLeft');
+    const rightButton = document.querySelector('#cardRight');
+    const rotateCards = new RotateCards([...cards], cardSequnce);
+
+    leftButton.addEventListener('click', () => {
+        rotateCards.moveLeft();
+    });
+
+    rightButton.addEventListener('click', () => {
+        rotateCards.moveRight();
+    });
+}
 
 // 3. search 기능
 function search() {
@@ -24,3 +73,6 @@ function search() {
 function dailyRoom() {
     location.href='../pages/dailyRoom.html';
 }
+
+// 함수 출력
+card();
